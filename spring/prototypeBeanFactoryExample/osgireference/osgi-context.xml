@@ -10,6 +10,9 @@
     http://www.springframework.org/schema/osgi-compendium http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
     ">
 
+<!--
+     	Wrapping the HelperBeanFactory osgiservice in a BeanFactory.  Injection of the resulting bean instance occurs automatically
+-->
     <bean id="testBean"
         class="randyc.BeanFactory">
         <property name="helperBeanFactory">
